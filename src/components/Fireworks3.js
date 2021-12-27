@@ -15,7 +15,6 @@ function Fireworks3() {
   return (
     <div>
       <Fireworks {...fxProps} />
-      <h1>Congrats!</h1>
     </div>
   )
 }

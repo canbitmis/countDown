@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 function Countdownlist({ setCountDown }) {
     const [time, setTime] = useState("");
     useEffect(() => {
-        let countDownDate = new Date("Aug 23, 2021 08:59:00").getTime();
+        let countDownDate = new Date("Dec 27, 2021 17:44:00").getTime();
         //Her saniye güncellenir
         let x = setInterval(function () {
             //Gün ve Zamanı Bağlar
@@ -22,7 +22,7 @@ function Countdownlist({ setCountDown }) {
             setTime(days + "Gün " + hours + "Saat " + minutes + "Dakika " + seconds + "Saniye ")
             if (distance < 0) {
                 clearInterval(x);
-                setTime("Merhaba")
+                setTime("Happy New Year!")
                 setCountDown(true)
                 setTimeout(() => {
                     setCountDown(false)
